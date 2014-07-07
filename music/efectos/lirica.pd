@@ -1,0 +1,19 @@
+#N canvas 0 25 1274 694 10;
+#X obj 239 169 random_metro;
+#X obj 254 116 inlet;
+#X obj 246 192 random 4000;
+#X obj 122 207 noise~;
+#X obj 169 302 bp~ 2000 8;
+#X obj 164 384 outlet~;
+#X obj 213 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 253 232 \$1 1000;
+#X obj 232 265 line \$1;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 7 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 6 0 0 0;
+#X connect 7 0 8 0;
+#X connect 8 0 4 1;

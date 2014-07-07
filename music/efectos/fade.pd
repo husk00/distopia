@@ -1,0 +1,28 @@
+#N canvas 0 25 1274 694 10;
+#X obj 357 325 line~;
+#X obj 266 428 *~;
+#X obj 363 166 inlet;
+#X obj 363 218 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 470 158 inlet;
+#X obj 470 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 256 174 inlet~;
+#X obj 288 470 outlet~;
+#X obj 311 383 fade~ _hann;
+#X msg 461 292 1 \, 0 \$1;
+#X msg 363 282 0 \, 1 \$1;
+#X obj 363 249 float \$1;
+#X obj 462 252 float \$1;
+#X connect 0 0 8 0;
+#X connect 1 0 7 0;
+#X connect 2 0 3 0;
+#X connect 3 0 11 0;
+#X connect 4 0 5 0;
+#X connect 5 0 12 0;
+#X connect 6 0 1 0;
+#X connect 8 0 1 1;
+#X connect 9 0 0 0;
+#X connect 10 0 0 0;
+#X connect 11 0 10 0;
+#X connect 12 0 9 0;

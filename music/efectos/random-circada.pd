@@ -1,0 +1,47 @@
+#N canvas 0 25 1274 694 10;
+#X obj 421 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 435 473 *~;
+#X obj 340 453 *~;
+#X obj 651 331 switch~;
+#X obj 568 306 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 423 131 inlet;
+#X obj 492 375 bing 50 50 100;
+#X obj 342 230 circada1;
+#X obj 353 412 balance;
+#X obj 546 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 548 131 inlet;
+#X obj 548 185 t b b b;
+#X obj 423 185 t b b b b b;
+#X obj 336 319 fade 1000;
+#X obj 587 239 del 1000;
+#X obj 412 321 varia 20;
+#X obj 324 365 limiteur;
+#X obj 383 540 throw~ circada-g;
+#X obj 508 542 throw~ circada-d;
+#X connect 0 0 12 0;
+#X connect 1 0 18 0;
+#X connect 2 0 17 0;
+#X connect 4 0 3 0;
+#X connect 5 0 0 0;
+#X connect 6 0 1 1;
+#X connect 6 0 2 1;
+#X connect 7 0 13 0;
+#X connect 8 0 2 0;
+#X connect 8 1 1 0;
+#X connect 9 0 11 0;
+#X connect 10 0 9 0;
+#X connect 11 0 14 0;
+#X connect 11 1 15 0;
+#X connect 11 2 13 2;
+#X connect 12 0 7 0;
+#X connect 12 1 13 1;
+#X connect 12 2 15 0;
+#X connect 12 3 6 0;
+#X connect 12 4 4 0;
+#X connect 13 0 16 0;
+#X connect 14 0 4 0;
+#X connect 15 0 8 1;
+#X connect 16 0 8 0;

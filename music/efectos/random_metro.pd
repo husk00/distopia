@@ -1,0 +1,9 @@
+#N canvas 314 290 450 300 10;
+#X obj 132 113 metro 1000;
+#X obj 125 50 inlet;
+#X obj 189 67 random 1000;
+#X obj 138 167 outlet;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
